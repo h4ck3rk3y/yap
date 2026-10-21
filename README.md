@@ -10,6 +10,7 @@ It works like Granola: **your mic is you, system audio is them**. Yap doesn't tr
 ./build.sh --run       # build + launch from ./build
 ./build.sh --install   # build + copy to ~/Applications and launch
 swift test             # core logic tests
+swift scripts/make-icon.swift  # regenerate Resources/AppIcon.icns
 ```
 
 On first start, macOS asks for **Microphone** and **Screen & System Audio Recording** access. The second one is how Yap hears the other side. Without it, Yap still times your turns but can't show a ratio.
